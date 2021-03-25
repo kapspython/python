@@ -1,0 +1,108 @@
+import win32com.client as client
+
+email=input("Whats your email? : ")
+name=input("Whats your name? : ")
+
+print("Note: You have to order before going to KP foods restraunt.")
+import random
+
+id=random.choice("abcdefghijklmnopqrstuvwxyz")
+
+
+def order():
+    print("Todays menu is __")
+
+    order=input("What would you like to order? Use commas. : ")
+
+    outlook=client.Dispatch("Outlook.Application")
+
+    message=outlook.CreateItem(0)
+
+    message.To=("priteegoel@gmail.com")
+
+    message.Subject=("Chef! Someone has ordered!")
+
+    input1=("  Has ordered  ")
+
+    input2=("  Comfirmation ID is  ")
+
+    input4=(" have")
+
+    message.Body=(name + input1 + order + input2 + id)
+
+    message.Send()
+
+    print("Ordered, Check for comformation ID.")
+
+    outlook=client.Dispatch("Outlook.Application")
+
+    message=outlook.CreateItem(0)
+
+    message.To=(email)
+
+    message.Subject=("You have ordered succesfully!")
+
+    input3=("you")
+
+    message.Body=( input3+ input4 + order + input2 + id)
+
+    message.Send()
+
+
+    print("Note: You have to tell the comfirmation ID to KP foods")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+def starter():
+    print("welcome to KP foods restraunt! Here you can order food. Credits: Coder: Kapish Goyal, Chef: Pritee Goyal, Owner: Kapish Goyal")
+    
+
+    outlook=client.Dispatch("Outlook.Application")
+
+    message=outlook.CreateItem(0)
+
+    message.To=email
+
+    message.Subject=("Your OTP for python project is in the body")
+
+    
+
+    OTP=random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10)+ random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10)+ random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10)+ random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10)+ random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10)+ random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10)+ random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10)+ random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10)+ random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10)+ random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10)+ random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10)+ random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10)+ random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10)+ random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10)+ random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10)+ random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10)+ random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10)+ random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10)+ random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10)+ random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10)+ random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10)+ random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10)+ random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10)+ random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10)+ random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10)+ random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10)+ random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10)+ random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10)+ random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10)+ random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10)+ random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10)+ random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10)+ random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10)+ random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10)+ random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10)+ random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10)+ random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10)+ random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10)+ random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10)+ random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10)+ random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10)+ random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10)+ random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10)+ random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10)+ random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10)+ random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10)+ random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10) + random.randint(0,10)
+    
+    message.Body=(OTP)
+
+    message.Send()
+
+    OTPask=input("Whats the OTP : ")
+
+    print("Lets start ordering!")
+
+    order()
+
+
+
+
+
+
+
+starter()
+
+
+
+
+
+
+
